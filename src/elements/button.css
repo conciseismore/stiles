@@ -1,0 +1,74 @@
+/* button */
+
+.button {
+  display: inline-block;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: white;
+  color: #363636;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  border-color: #b5b5b5;
+  color: #363636;
+}
+
+.button.is-success {
+  background-color: #48c78e;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-success:hover {
+  background-color: #3ec487;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-info {
+  background-color: #3e8ed0;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-info:hover {
+  background-color: #3488ce;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-warning {
+  background-color: #ffe08a;
+  border-color: transparent;
+  color: rgba(0,0,0,.7);
+}
+
+.button.is-warning:hover {
+  background-color: #ffdc7d;
+  border-color: transparent;
+  color: rgba(0,0,0,.7);
+}
+
+.button.is-danger {
+  background-color: #f14668;
+  border-color: transparent;
+  color: #fff;
+}
+
+.button.is-danger:hover {
+  background-color: #f03a5f;
+  border-color: transparent;
+  color: #fff;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body class="p-4">
+
+  <h3>Card</h3>
+  <div class="card">
+    <div class="card-content">
+      <div class="card-header-title">card title</div>
+      <div>card content</div>
+    </div>
+  </div>
+  <hr />
+
+  <h3>Card footer</h3>
+  <div class="card">
+    <div class="card-footer">
+      <div class="card-footer-item">footer item1</div>
+      <div class="card-footer-item">footer item2</div>
+      <div class="card-footer-item">footer item3</div>
+      <div class="card-footer-item">footer item4</div>
+      <div class="card-footer-item">footer item5</div>
+    </div>
+  </div>
+  <hr />
+
+  <h3 class="message-wrap">Message click me</h3>
+  <div class="message">
+    <div>
+      <p>this is a message</p>
+    </div>
+  </div>
+  <hr />
+
+  <h3 class="modal-wrap">Modal click me</h3>
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">modal content</div>
+    </div>
+  </div>
+  <hr />
+
+  <h3>Button</h3>
+  <div>
+    <button type="button" class="button is-success">Success</button>
+    <button type="button" class="button is-info">Info</button>
+  </div>
+  <hr />
+
+  <h3>Delete</h3>
+  <div>
+    <div class="delete"></div>
+  </div>
+  <hr />
+
+  <h3>Notification</h3>
+  <div>
+    <div class="notification is-success">notification</div>
+  </div>
+  <hr />
+
+  <h3>From</h3>
+  <div>
+    <input type="text" class="input" placeholder="input" />
+  </div>
+  <div class="mt-2">
+    <textarea class="textarea" placeholder="textarea"></textarea>
+  </div>
+  <div class="select mt-2">
+    <select>
+      <option>select1</option>
+      <option>select2</option>
+      <option>select3</option>
+    </select>
+  </div>
+  <div class="mt-2">
+    <label class="checkbox">
+      <input type="checkbox" />
+      Checkbox
+    </label>
+    <label class="checkbox" disabled="true">
+      <input type="checkbox" disabled />
+      Checkbox disabled
+    </label>
+  </div>
+  <div class="mt-2">
+    <label class="radio">
+      <input type="radio" name="answer" /> Yes 
+    </label>
+    <label class="radio">
+      <input type="radio" name="answer" /> No 
+    </label>
+    <label class="radio" disabled="true">
+      <input type="radio" name="answer" disabled /> Maybe 
+    </label>
+  </div>
+  <hr />
+
+  <script>
+    const bodyContent = document.querySelector('body')
+    const modalWrap = document.querySelector('.modal-wrap')
+    const modal = document.querySelector('.modal')
+
+    modalWrap.addEventListener('click', () => {
+      modal.classList.toggle('is-active')
+    })
+
+    bodyContent.addEventListener('click', (e) => {
+      if (e.target.classList.contains('modal-background')) {
+        modal.classList.remove('is-active')
+      }
+    })
+  </script>
+
+  <script src="./bundle.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* message */
+
+.message {
+  display: none;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 0.8rem 1.2rem;
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  z-index: 555;
+  transform: translateX(-50%);
+  min-width: 380px;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: #e4e7ed;
+  background-color: #edf2fc;
+  transition: opacity .3s, transform .4s,top .4s;
+  color: #909399;
+}
+
+.message.is-active {
+  display: block;
+}
+
+.message.is-success {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+  color: #67c23a;
+}
+
+.message.is-warning {
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+  color: #e6a23c;
+}
+
+.message.is-danger {
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+  color: #f56c6c;
+}

@@ -1,0 +1,15 @@
+/* float */
+
+.is-clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.is-pulled-left {
+  float: left;
+}
+
+.is-pulled-right {
+  float: right;
+}

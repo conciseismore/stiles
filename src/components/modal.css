@@ -1,0 +1,35 @@
+/* modal */
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: fixed;
+  z-index: 55;
+}
+
+.modal.is-active {
+  display: flex;
+}
+
+.modal-background {
+  background-color: rgba(10, 10, 10, 0.86);
+}
+
+.modal-content {
+  margin: 0 20px;
+  max-height: calc(100vh - 160px);
+  overflow: auto;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .modal-content {
+    max-height: calc(100vh - 40px);
+    margin: 0 auto;
+    width: 640px;
+  }
+}

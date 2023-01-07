@@ -1,0 +1,5 @@
+/* overflow */
+
+.is-clipped {
+  overflow: hidden;
+}
