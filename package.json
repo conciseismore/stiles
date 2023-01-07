@@ -1,6 +1,6 @@
 {
-  "name": "stil",
-  "version": "1.0.0",
+  "name": "stiles",
+  "version": "1.0.1",
   "description": "Common Styles",
   "main": "src/index.js",
   "type": "module",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/conciseismore/stil.git"
   },
-  "keywords": [],
+  "keywords": ["css", "flexbox"],
   "author": "",
   "license": "ISC",
   "bugs": {
