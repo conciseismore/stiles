@@ -1,11 +1,11 @@
 # stil 
 
-Common、Simple、Useful、Native
+Simple and native CSS.
 
 # Usage 
 
 ## Install 
 
 ```
-npm i stil
+npm i stiles 
 ```
