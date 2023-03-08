@@ -1,6 +1,6 @@
 {
   "name": "stiles",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common Styles",
   "main": "src/index.js",
   "type": "module",
