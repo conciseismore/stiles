@@ -53,9 +53,11 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+/* wx miniprogram does not support * */
+
+/* *, *::before, *::after {
   box-sizing: inherit;
-}
+} */
 
 img,
 video {
@@ -661,7 +663,7 @@ input {
   flex-direction: column;
 }
 
-.is-flex-wrap-wrap {
+.is-flex-wrap {
   flex-wrap: wrap;
 }
 
